@@ -16,89 +16,110 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J1B-sq-j0S">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWo-AN-ZV0">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="522"/>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nli-EY-akc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzV-sI-Dnp">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" red="1" green="0.70482256300000001" blue="0.21570419190000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.43575086410000002" blue="0.17147806760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Superclarendon-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" fixedFrame="YES">
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <rect key="frame" x="16" y="402" width="301" height="21"/>
+                                    <rect key="frame" x="16" y="352" width="249" height="22"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbd-dW-EkL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDt-NH-vti">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" red="1" green="0.70482256300000001" blue="0.21570419190000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.43575086410000002" blue="0.17147806760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Superclarendon-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" fixedFrame="YES">
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <rect key="frame" x="16" y="439" width="301" height="21"/>
+                                    <rect key="frame" x="16" y="382" width="249" height="22"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Breed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dra-Gn-Yr9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSF-27-ORU">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" red="1" green="0.70482256300000001" blue="0.21570419190000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Label">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.43575086410000002" blue="0.17147806760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="Superclarendon-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <variation key="widthClass=compact" fixedFrame="YES">
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <rect key="frame" x="16" y="468" width="301" height="21"/>
+                                    <rect key="frame" x="16" y="322" width="249" height="22"/>
                                 </variation>
                             </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3wD-Vh-P6J">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCd-Ds-4Tc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="6v2-6f-oZ3"/>
-                                    <barButtonItem title="Next" id="5Pd-tk-3p0">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="hQe-bS-6Ft"/>
+                                    <barButtonItem title="Next" width="57" id="SdI-Gw-j4n">
                                         <connections>
-                                            <action selector="nextBarButtonItemPressed:" destination="BYZ-38-t0r" id="K2t-Fs-QBT"/>
+                                            <action selector="nextButtonBarItemPressed:" destination="BYZ-38-t0r" id="ANH-0Z-fGT"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-5" y="522" width="325" height="44"/>
                                 </variation>
                             </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="J1B-sq-j0S"/>
-                                <exclude reference="Nli-EY-akc"/>
-                                <exclude reference="Dbd-dW-EkL"/>
-                                <exclude reference="dra-Gn-Yr9"/>
-                                <exclude reference="3wD-Vh-P6J"/>
+                                <exclude reference="OWo-AN-ZV0"/>
+                                <exclude reference="dzV-sI-Dnp"/>
+                                <exclude reference="nDt-NH-vti"/>
+                                <exclude reference="zSF-27-ORU"/>
+                                <exclude reference="MCd-Ds-4Tc"/>
                             </mask>
                         </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
+                        <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="J1B-sq-j0S"/>
-                                <include reference="Nli-EY-akc"/>
-                                <include reference="Dbd-dW-EkL"/>
-                                <include reference="dra-Gn-Yr9"/>
-                                <include reference="3wD-Vh-P6J"/>
+                                <include reference="OWo-AN-ZV0"/>
+                                <include reference="dzV-sI-Dnp"/>
+                                <include reference="nDt-NH-vti"/>
+                                <include reference="zSF-27-ORU"/>
+                                <include reference="MCd-Ds-4Tc"/>
                             </mask>
                         </variation>
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="ageLabel" destination="Dbd-dW-EkL" id="9XA-h2-gvI"/>
-                        <outlet property="breedLabel" destination="dra-Gn-Yr9" id="9VZ-Md-eZd"/>
-                        <outlet property="myImageView" destination="J1B-sq-j0S" id="ZoU-RA-FI2"/>
-                        <outlet property="nameLabel" destination="Nli-EY-akc" id="5ZW-ap-MlR"/>
+                        <outlet property="ageLabel" destination="dzV-sI-Dnp" id="QdC-UH-SzX"/>
+                        <outlet property="breedLabel" destination="nDt-NH-vti" id="jnp-dx-3da"/>
+                        <outlet property="myImageView" destination="OWo-AN-ZV0" id="YXC-xH-gJu"/>
+                        <outlet property="nameLabel" destination="zSF-27-ORU" id="iMp-7e-Jqv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295.5" y="436.5"/>
+            <point key="canvasLocation" x="295.5" y="436"/>
         </scene>
     </scenes>
 </document>

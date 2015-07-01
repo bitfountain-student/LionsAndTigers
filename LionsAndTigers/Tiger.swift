@@ -15,11 +15,15 @@ struct Tiger {
   var breed = ""
   var image = UIImage(named:"")
   
+  func chuff() {
+    println("Tiger will do Chuf Chuf")
+  }
+  
   func chuff(tigerName:String) {
     println("\(tigerName) will do Chuff Chuff")
   }
   
-  func chuffANumberOfTimes (tigerName:String, numberOfTimes: Int) {
+  func chuff (tigerName:String, numberOfTimes: Int) {
     for var chuff = 0; chuff < numberOfTimes; ++chuff {
       self.chuff(tigerName)
     }

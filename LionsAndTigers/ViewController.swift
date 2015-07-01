@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  
   @IBOutlet weak var myImageView: UIImageView!
   
   @IBOutlet weak var nameLabel: UILabel!
@@ -25,13 +26,16 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    handleTigers();
+  }
+  func handleTigers() {
     var myTiger = Tiger()
     myTiger.name = "Tigger"
     myTiger.breed = "Bengal"
     myTiger.age = 3
     myTiger.image = UIImage(named: "BengalTiger.jpg")
     
-    myTiger.chuff(myTiger.name)
+    myTiger.chuff()
     
     println("My Tiger's name is \(myTiger.name), and its age is \(myTiger.age), its' breed is: \(myTiger.breed) and it's image is \(myTiger.image)")
     
@@ -62,7 +66,7 @@ class ViewController: UIViewController {
   
     myTigers = [myTiger, secondTiger, thirdTiger, fourthTiger]
     
-    myTiger.chuffANumberOfTimes(myTiger.name, numberOfTimes: 6)
+    myTiger.chuff(myTiger.name, numberOfTimes: 6)
   }
 
   override func didReceiveMemoryWarning() {
@@ -71,8 +75,9 @@ class ViewController: UIViewController {
   }
 
 
-  @IBAction func nextBarButtonItemPressed(sender: UIBarButtonItem) {
 
+  @IBAction func nextButtonBarItemPressed(sender: UIBarButtonItem) {
+ 
     do {
       randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
     } while randomIndex == previousRandomIndex
