@@ -19,6 +19,8 @@ class ViewController: UIViewController {
   @IBOutlet weak var breedLabel: UILabel!
   
   var myTigers:[Tiger] = []
+  var randomIndex:Int = 0
+  var previousRandomIndex:Int = 0
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -62,8 +64,26 @@ class ViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
 
+
   @IBAction func nextBarButtonItemPressed(sender: UIBarButtonItem) {
-    println("\(myTigers)")
+
+    do {
+      randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+    } while randomIndex == previousRandomIndex
+
+    println("\(previousRandomIndex) \(randomIndex)")
+    let tiger = myTigers[randomIndex]
+    previousRandomIndex = randomIndex
+    
+    myImageView.image = tiger.image
+    
+    nameLabel.text = tiger.name
+      
+    ageLabel.text = "\(tiger.age)"
+    
+    breedLabel.text = tiger.breed
+    println("My Tiger's name is \(tiger.name), and its age is \(tiger.age), its' breed is: \(tiger.breed) and it's image is \(tiger.image)")
+
   }
 }
 
