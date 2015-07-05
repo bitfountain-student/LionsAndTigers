@@ -22,6 +22,7 @@
 		B42936691B40D5020097C327 /* Lioness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B42936611B40D5020097C327 /* Lioness.jpeg */; };
 		B429366A1B40D5020097C327 /* MalayanTiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B42936621B40D5020097C327 /* MalayanTiger.jpg */; };
 		B429366B1B40D5020097C327 /* SiberianTiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B42936631B40D5020097C327 /* SiberianTiger.jpg */; };
+		B4327B5D1B48AA1700782CC1 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4327B5C1B48AA1700782CC1 /* Lion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		B42936611B40D5020097C327 /* Lioness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Lioness.jpeg; sourceTree = "<group>"; };
 		B42936621B40D5020097C327 /* MalayanTiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MalayanTiger.jpg; sourceTree = "<group>"; };
 		B42936631B40D5020097C327 /* SiberianTiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SiberianTiger.jpg; sourceTree = "<group>"; };
+		B4327B5C1B48AA1700782CC1 /* Lion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				B429363C1B40C4800097C327 /* ViewController.swift */,
 				B429363E1B40C4800097C327 /* Main.storyboard */,
 				B429365A1B40CF130097C327 /* Tiger.swift */,
+				B4327B5C1B48AA1700782CC1 /* Lion.swift */,
 				B42936411B40C4800097C327 /* Images.xcassets */,
 				B42936431B40C4810097C327 /* LaunchScreen.xib */,
 				B42936381B40C4800097C327 /* Supporting Files */,
@@ -258,6 +261,7 @@
 				B429363D1B40C4800097C327 /* ViewController.swift in Sources */,
 				B429365B1B40CF130097C327 /* Tiger.swift in Sources */,
 				B429363B1B40C4800097C327 /* AppDelegate.swift in Sources */,
+				B4327B5D1B48AA1700782CC1 /* Lion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,6 +459,7 @@
 				B42936561B40C4810097C327 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B42936571B40C4810097C327 /* Build configuration list for PBXNativeTarget "LionsAndTigersTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +468,7 @@
 				B42936591B40C4810097C327 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
