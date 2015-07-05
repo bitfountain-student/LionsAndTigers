@@ -24,11 +24,14 @@ class ViewController: UIViewController {
   var previousRandomIndex:Int = 0
   var lions:[Lion] = []
   
+  var currentIndex = 0
+  
+  var currentAnimal = (species: "Tiger", index: 0)
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-    handleTigers();
+    handleTigers()
   }
   func handleTigers() {
     var myTiger = Tiger()
@@ -118,5 +121,20 @@ class ViewController: UIViewController {
         (finished:Bool) ->() in
     })
   }
+  
+  func updateAnimal() {
+    switch currentAnimal {
+    case ("Tiger", _):
+      let randomIndex = Int(arc4random_uniform(UInt32(lions.count)))
+      
+      currentAnimal = ("Lion", randomIndex)
+    default:
+      let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
+      currentAnimal = ("Tiger", randomIndex)
+    }
+  }
+  
+  
+  
 }
 
