@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+  
+  // IB Outlets
   
   @IBOutlet weak var myImageView: UIImageView!
   
@@ -19,8 +20,10 @@ class ViewController: UIViewController {
   
   @IBOutlet weak var breedLabel: UILabel!
   
+  // Properties
+  
   var myTigers:[Tiger] = []
-  var randomIndex:Int = 0
+  
   var previousRandomIndex:Int = 0
   var lions:[Lion] = []
   
@@ -28,21 +31,21 @@ class ViewController: UIViewController {
   
   var currentAnimal = (species: "Tiger", index: 0)
   
+  // methods
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
-    handleTigers()
+    
+    loadAnimals()
   }
-  func handleTigers() {
+  
+  func loadAnimals() {
     var myTiger = Tiger()
     myTiger.name = "Tigger"
     myTiger.breed = "Bengal"
     myTiger.age = 3
     myTiger.image = UIImage(named: "BengalTiger.jpg")
-    
-    myTiger.chuff()
-    
-    println("My Tiger's name is \(myTiger.name), and its age is \(myTiger.age), its' breed is: \(myTiger.breed) and it's image is \(myTiger.image)")
     
     myImageView.image = myTiger.image!
     nameLabel.text = myTiger.name
@@ -55,8 +58,6 @@ class ViewController: UIViewController {
     secondTiger.age = 2
     secondTiger.image = UIImage(named: "IndochineseTiger.jpg")
     
-    secondTiger.chuff(secondTiger.name)
-    
     var thirdTiger = Tiger()
     thirdTiger.name = "Jacob"
     thirdTiger.breed = "Malayan Tiger"
@@ -68,10 +69,8 @@ class ViewController: UIViewController {
     fourthTiger.breed = "Siberian Tiger"
     fourthTiger.age = 5
     fourthTiger.image = UIImage(named: "SiberianTiger.jpg")
-  
-    myTigers = [myTiger, secondTiger, thirdTiger, fourthTiger]
     
-    myTiger.chuff(myTiger.name, numberOfTimes: 6)
+    myTigers = [myTiger, secondTiger, thirdTiger, fourthTiger]
     
     var lion = Lion()
     lion.age = 4
@@ -86,40 +85,18 @@ class ViewController: UIViewController {
     lioness.image = UIImage(named: "Lioness.jpeg")
     lioness.name = "Sarabi"
     lioness.subspecies = "Barbary"
+    
     self.lions += [lion, lioness]
   }
-
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
   }
 
-
-
   @IBAction func nextButtonBarItemPressed(sender: UIBarButtonItem) {
- 
-    do {
-      randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
-    } while randomIndex == previousRandomIndex
-
-    println("\(previousRandomIndex) \(randomIndex)")
-    let tiger = myTigers[randomIndex]
-    previousRandomIndex = randomIndex
-    
-//    myImageView.image = tiger.image
-//    nameLabel.text = tiger.name
-//    ageLabel.text = "\(tiger.age)"
-//    breedLabel.text = tiger.breed
-
-    println("My Tiger's name is \(tiger.name), and its age is \(tiger.age), its' breed is: \(tiger.breed) and it's image is \(tiger.image)")
-    UIView.transitionWithView(self.view, duration: 2, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
-      self.myImageView.image = tiger.image
-      self.nameLabel.text = tiger.name
-      self.ageLabel.text = "\(tiger.age)"
-      self.breedLabel.text = tiger.breed
-      }, completion: {
-        (finished:Bool) ->() in
-    })
+    updateAnimal()
+    updateView()
   }
   
   func updateAnimal() {
@@ -132,6 +109,30 @@ class ViewController: UIViewController {
       let randomIndex = Int(arc4random_uniform(UInt32(myTigers.count)))
       currentAnimal = ("Tiger", randomIndex)
     }
+  }
+  
+  func updateView() {
+    
+    UIView.transitionWithView(self.view, duration: 0, options: UIViewAnimationOptions.TransitionCrossDissolve, animations: {
+      
+      if self.currentAnimal.species == "Tiger" {
+        let tiger = self.myTigers[self.currentAnimal.index]
+        self.myImageView.image = tiger.image
+        self.breedLabel.text = tiger.breed
+        self.ageLabel.text = "\(tiger.age)"
+        self.nameLabel.text = tiger.name
+      }
+      else if self.currentAnimal.species == "Lion" {
+        let lion = self.lions[self.currentAnimal.index]
+        self.myImageView.image = lion.image
+        self.breedLabel.text = lion.subspecies
+        self.ageLabel.text = "\(lion.age)"
+        self.nameLabel.text = lion.name
+      }
+    }, completion: {
+        (finished:Bool) ->() in
+    })
+    
   }
   
   
