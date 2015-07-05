@@ -22,6 +22,8 @@ class ViewController: UIViewController {
   var myTigers:[Tiger] = []
   var randomIndex:Int = 0
   var previousRandomIndex:Int = 0
+  var lions:[Lion] = []
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -81,6 +83,7 @@ class ViewController: UIViewController {
     lioness.image = UIImage(named: "Lioness.jpeg")
     lioness.name = "Sarabi"
     lioness.subspecies = "Barbary"
+    self.lions += [lion, lioness]
   }
 
   override func didReceiveMemoryWarning() {
