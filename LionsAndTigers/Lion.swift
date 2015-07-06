@@ -15,4 +15,8 @@ class Lion {
   var image = UIImage(named:"")
   var name = ""
   var subspecies = ""
+    
+    func roar() {
+        println("Lion: Roar Roar")
+    }
 }
