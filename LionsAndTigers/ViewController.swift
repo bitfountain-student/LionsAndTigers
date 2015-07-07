@@ -116,6 +116,8 @@ class ViewController: UIViewController {
     
     lionCub.roar()
     
+    lionCub.rubLionCubsBelly()
+    
   }
 
   func updateAnimal() {
