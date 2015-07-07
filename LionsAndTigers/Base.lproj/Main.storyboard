@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWo-AN-ZV0">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="522"/>
-                                </variation>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dzV-sI-Dnp">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <attributedString key="attributedText">
@@ -87,24 +81,30 @@
                                     <rect key="frame" x="-5" y="522" width="325" height="44"/>
                                 </variation>
                             </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OWo-AN-ZV0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="522"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="OWo-AN-ZV0"/>
                                 <exclude reference="dzV-sI-Dnp"/>
                                 <exclude reference="nDt-NH-vti"/>
                                 <exclude reference="zSF-27-ORU"/>
                                 <exclude reference="MCd-Ds-4Tc"/>
+                                <exclude reference="OWo-AN-ZV0"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="OWo-AN-ZV0"/>
                                 <include reference="dzV-sI-Dnp"/>
                                 <include reference="nDt-NH-vti"/>
                                 <include reference="zSF-27-ORU"/>
                                 <include reference="MCd-Ds-4Tc"/>
+                                <include reference="OWo-AN-ZV0"/>
                             </mask>
                         </variation>
                     </view>

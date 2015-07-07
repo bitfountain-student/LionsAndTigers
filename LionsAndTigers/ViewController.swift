@@ -106,6 +106,16 @@ class ViewController: UIViewController {
     
     // fill lions array
     lions = [lion, lioness]
+    
+    // create lion cubs
+    var lionCub = LionCub()
+    lionCub.age = 1
+    lionCub.name = "Simba"
+    lionCub.image = UIImage(named: "LionCub1.jpg")
+    lionCub.subspecies = "Masai"
+    
+    lionCub.roar()
+    
   }
 
   func updateAnimal() {
