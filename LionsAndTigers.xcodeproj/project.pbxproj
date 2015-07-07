@@ -23,7 +23,7 @@
 		B429366A1B40D5020097C327 /* MalayanTiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B42936621B40D5020097C327 /* MalayanTiger.jpg */; };
 		B429366B1B40D5020097C327 /* SiberianTiger.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B42936631B40D5020097C327 /* SiberianTiger.jpg */; };
 		B4327B5D1B48AA1700782CC1 /* Lion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4327B5C1B48AA1700782CC1 /* Lion.swift */; };
-		B4327B611B4C405900782CC1 /* LionCub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4327B601B4C405900782CC1 /* LionCub.swift */; };
+		B4FB3DF91B4C453F008D4CB0 /* LionCub.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FB3DF81B4C453F008D4CB0 /* LionCub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 		B42936621B40D5020097C327 /* MalayanTiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MalayanTiger.jpg; sourceTree = "<group>"; };
 		B42936631B40D5020097C327 /* SiberianTiger.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SiberianTiger.jpg; sourceTree = "<group>"; };
 		B4327B5C1B48AA1700782CC1 /* Lion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lion.swift; sourceTree = "<group>"; };
-		B4327B601B4C405900782CC1 /* LionCub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LionCub.swift; path = "../../LionsAndTigers zzz/LionsAndTigers/LionCub.swift"; sourceTree = "<group>"; };
+		B4FB3DF81B4C453F008D4CB0 /* LionCub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LionCub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +104,7 @@
 				B429363E1B40C4800097C327 /* Main.storyboard */,
 				B429365A1B40CF130097C327 /* Tiger.swift */,
 				B4327B5C1B48AA1700782CC1 /* Lion.swift */,
-				B4327B601B4C405900782CC1 /* LionCub.swift */,
+				B4FB3DF81B4C453F008D4CB0 /* LionCub.swift */,
 				B42936411B40C4800097C327 /* Images.xcassets */,
 				B42936431B40C4810097C327 /* LaunchScreen.xib */,
 				B42936381B40C4800097C327 /* Supporting Files */,
@@ -261,10 +261,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4FB3DF91B4C453F008D4CB0 /* LionCub.swift in Sources */,
 				B429363D1B40C4800097C327 /* ViewController.swift in Sources */,
 				B429365B1B40CF130097C327 /* Tiger.swift in Sources */,
 				B429363B1B40C4800097C327 /* AppDelegate.swift in Sources */,
-				B4327B611B4C405900782CC1 /* LionCub.swift in Sources */,
 				B4327B5D1B48AA1700782CC1 /* Lion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
