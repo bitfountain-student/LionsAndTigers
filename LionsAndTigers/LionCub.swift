@@ -14,6 +14,7 @@ class LionCub:Lion {
   }
   
   override func roar () {
+    super.roar()
     println("LionCub: Growl Growl")
   }
   

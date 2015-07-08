@@ -24,9 +24,11 @@ class ViewController: UIViewController {
   
   var tigers:[Tiger] = []
   var lions:[Lion] = []
+  var lionCubs: [LionCub] = []
   
   var previousTigerIndex:Int = 0
   var previousLionIndex:Int = 0
+  var previousTigerCubsIndex = 0
   
   var currentAnimal = (species: "Tiger", index: 0) // define tuple and initialize to default
   
@@ -115,9 +117,19 @@ class ViewController: UIViewController {
     lionCub.subspecies = "Masai"
     
     lionCub.roar()
-    
     lionCub.rubLionCubsBelly()
     
+    var femaleLionCub = LionCub()
+    femaleLionCub.age = 1
+    femaleLionCub.name = "Nala"
+    femaleLionCub.image = UIImage(named: "LionCub2.jpeg")
+    femaleLionCub.subspecies = "Transvasl"
+    femaleLionCub.isAlphaMale = false
+    
+    // fill lionCubs array
+    
+    lionCubs = [lionCub, femaleLionCub]
+
   }
 
   func updateAnimal() {
@@ -130,6 +142,13 @@ class ViewController: UIViewController {
       } while randomIndex == previousTigerIndex
       previousTigerIndex = randomIndex
       currentAnimal = ("Lion", randomIndex)
+    case ("Lion", _):
+      do {
+        randomIndex = Int(arc4random_uniform(UInt32(lionCubs.count)))
+      } while randomIndex == previousTigerIndex
+      previousTigerCubsIndex = randomIndex
+      currentAnimal = ("LionCub", randomIndex)
+
     default:
       do {
         randomIndex = Int(arc4random_uniform(UInt32(tigers.count)))
@@ -159,6 +178,13 @@ class ViewController: UIViewController {
         self.breedLabel.text = lion.subspecies
         self.ageLabel.text = "\(lion.age)"
         self.nameLabel.text = lion.name
+      }
+      else if self.currentAnimal.species == "LionCub" {
+        let lionCub = self.lionCubs[self.currentAnimal.index]
+        self.myImageView.image = lionCub.image
+        self.breedLabel.text = lionCub.subspecies
+        self.ageLabel.text = "\(lionCub.age)"
+        self.nameLabel.text = lionCub.name
       }
       
    // the next three lines are part of the required animation code
