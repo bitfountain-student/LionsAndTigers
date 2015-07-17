@@ -16,11 +16,11 @@ struct Tiger {
   var image = UIImage(named:"")
   
   func chuff() {
-    println("Tiger will do Chuf Chuf")
+    print("Tiger will do Chuf Chuf")
   }
   
   func chuff(tigerName:String) {
-    println("\(tigerName) will do Chuff Chuff")
+    print("\(tigerName) will do Chuff Chuff")
   }
   
   func chuff (tigerName:String, numberOfTimes: Int) {

@@ -89,14 +89,14 @@ class ViewController: UIViewController {
     
     // create lions
     
-    var lion = Lion()
+    let lion = Lion()
     lion.age = 4
     lion.isAlphaMale = false
     lion.image = UIImage(named: "Lion.jpg")
     lion.name = "Mufasa"
     lion.subspecies = "West Africa"
     
-    var lioness = Lion()
+    let lioness = Lion()
     lioness.age = 3
     lioness.isAlphaMale = false
     lioness.image = UIImage(named: "Lioness.jpeg")
@@ -110,7 +110,7 @@ class ViewController: UIViewController {
     lions = [lion, lioness]
     
     // create lion cubs
-    var lionCub = LionCub()
+    let lionCub = LionCub()
     lionCub.age = 1
     lionCub.name = "Simba"
     lionCub.image = UIImage(named: "LionCub1.jpg")
@@ -119,7 +119,7 @@ class ViewController: UIViewController {
     lionCub.roar()
     lionCub.rubLionCubsBelly()
     
-    var femaleLionCub = LionCub()
+    let femaleLionCub = LionCub()
     femaleLionCub.age = 1
     femaleLionCub.name = "Nala"
     femaleLionCub.image = UIImage(named: "LionCub2.jpeg")
@@ -137,20 +137,20 @@ class ViewController: UIViewController {
     
     switch currentAnimal {
     case ("Tiger", _):
-      do {
+      repeat {
         randomIndex = Int(arc4random_uniform(UInt32(lions.count)))
       } while randomIndex == previousTigerIndex
       previousTigerIndex = randomIndex
       currentAnimal = ("Lion", randomIndex)
     case ("Lion", _):
-      do {
+      repeat {
         randomIndex = Int(arc4random_uniform(UInt32(lionCubs.count)))
       } while randomIndex == previousTigerIndex
       previousTigerCubsIndex = randomIndex
       currentAnimal = ("LionCub", randomIndex)
 
     default:
-      do {
+      repeat {
         randomIndex = Int(arc4random_uniform(UInt32(tigers.count)))
       } while randomIndex == previousLionIndex
       previousLionIndex = randomIndex

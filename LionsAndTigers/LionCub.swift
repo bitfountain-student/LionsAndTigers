@@ -10,12 +10,12 @@ import Foundation
 
 class LionCub:Lion {
   func rubLionCubsBelly() {
-    println("LionCub: Snuggle and be happy")
+    print("LionCub: Snuggle and be happy")
   }
   
   override func roar () {
     super.roar()
-    println("LionCub: Growl Growl")
+    print("LionCub: Growl Growl")
   }
   
 }
